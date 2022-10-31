@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeTflix</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../ASSETS/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="background-plan">
+            <div class="nav-bar">
+                <div class="nav-toogle" onclick="nav_toogle()">
+                    <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                      </svg>
+                </div>
+                <div class="navmenu" id="navmenu">
+                    <div class="logo">
+                        <img src="../ASSETS/Letflix.png" alt="Logo" width="165px">
+                    </div>
+                    <div class="item">
+                        <a href="../HTML/Home.html" class="link">HOME</a>
+                    </div>
+                    <div class="item dropdown">
+                        <a href="../HTML/Dramas.html" class="link">DRAMA'S</a>
+                        <div class="dropdown-menu">
+                            <a href="western.html" class="dropdown-item">Western</a>
+                            <a href="korean.html" class="dropdown-item">Korean</a>
+                            <a href="china.html" class="dropdown-item">China</a>
+                            <a href="thailand.html" class="dropdown-item">Thailand</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../HTML/Plan.html" class="link">PLAN'S</a>
+                    </div>
+                    <div class="item">
+                        <a href="../HTML/About.html" class="link">ABOUT</a>
+                    </div>
+                    <div class="item">
+                        <a href="../HTML/Subcription.html" class="link">SUBSCRIPTION</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <h1>Dramas</h1>
+            </div>
+            <div class="spacer"></div>
+            <div class="movie">
+                <div class="movie-main">
+                    <div class="movie-genre">
+                        <div class="country">
+                            <div>
+                                Western
+                            </div>
+                            <div>
+                                <a href="../HTML/western.html" id="see-all">see all >></a>
+                            </div>
+                        </div>
+                        <div class="spacer-movie"></div>
+                        <div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/Western/Cruella.jpg" alt="">
+                                    <h5 id="H3">Cruella (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Western/End Game.jpg" alt="">
+                                    <h5 id="H3">End Game (2020)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Western/Fantastic Beasts.jpg" alt="">
+                                    <h5 id="H3">Fantastic Beasts (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Western/Godzilla vs Kong.jpg" alt="">
+                                    <h5 id="H3">Godzilla vs Kong (2021)</h5>
+                                </div>
+                            </div>
+                            <div class="spacer-movie"></div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/Western/Great White.jpg" alt="">
+                                    <h5 id="H3">Great White (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Western/Justice League.jpg" alt="">
+                                    <h5 id="H3">Justice League (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Western/Mortal Kombat.jpg" alt="">
+                                    <h5 id="H3">Mortal Kombat (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Western/The Conjuring 2.jpg" alt="">
+                                    <h5 id="H3">The Conjuring (2021)</h5>
+                                </div>
+                            </div>
+                            <!-- <div class="spacer-movie"></div>
+                            <div class="movie-item">
+                                <div class="items">                                
+                                    <img src="../ASSETS/Western/Infinity War.jpg" alt="">
+                                    <h5 id="H3">Infinity War (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Western/The Falcon and The Winter Soldier.jpg" alt="">
+                                    <h5 id="H3">The Falcon and The Winter Soldier (2021)</h5>                                
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Western/The Unholy.jpg" alt="">
+                                    <h5 id="H3">The Unholy (2021)</h5>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="spacer-movie"></div>
+                    </div>
+                    <div class="movie-genre">
+                        <div class="country">
+                            <div>
+                                Korean
+                            </div>
+                            <div>
+                                <a href="../HTML/korean.html" id="see-all">see all >></a>
+                            </div>
+                        </div>
+                        <div class="spacer-movie"></div>
+                        <div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/18 Again.jpg" alt="">
+                                    <h5 id="H3">18 Again (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/Backstreet Rookie.jpg" alt="">
+                                    <h5 id="H3">Backstreet Rookie (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/Vincenzo.jpg" alt="">
+                                    <h5 id="H3">Vincenzo (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/Itaewon Class.jpg" alt="">
+                                    <h5 id="H3">Itaewon Class (2021)</h5>
+                                </div>
+                            </div>
+                            <div class="spacer-movie"></div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/Start Up.jpg" alt="">
+                                    <h5 id="H3">Start Up (2021)</h5>
+                                </div class="items">
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/Stranger from Hell.jpg" alt="">
+                                    <h5 id="H3">Stranger from Hell (2021)</h5>
+                                </div class="items">
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/Sweet Home.jpg" alt="">
+                                    <h5 id="H3">Sweet Home (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/The Penthouse.jpg" alt="">
+                                    <h5 id="H3">The Penthouse (2021)</h5>
+                                </div>
+                            </div>
+                            <!-- <div class="spacer-movie"></div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/True Beauty.jpg" alt="">
+                                    <h5 id="H3">True Beauty (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Korean/Crash Landing on You.jpg" alt="">
+                                    <h5 id="H3">Crash Landing on You (2021)</h5>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="spacer-movie"></div>
+                    </div>
+                    <div class="movie-genre">
+                        <div class="country">
+                            <div>
+                                China
+                            </div>
+                            <div>
+                                <a href="../HTML/china.html" id="see-all">see all >></a>
+                            </div>
+                        </div>
+                        <div class="spacer-movie"></div>
+                        <div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/China/Bleeding Steel.jpg" alt="">
+                                    <h5 id="H3">Bleeding Steel (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/China/Cashing the Dragon.jpg" alt="">
+                                    <h5 id="H3">Cashing the Dragon (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/China/Chinese Zodiac.jpg" alt="">
+                                    <h5 id="H3">Chinese Zodiac (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/China/IP Man 2.jpg" alt="">
+                                    <h5 id="H3">IP Man 2 (2021)</h5>
+                                </div>
+                            </div>
+                            <div class="spacer-movie"></div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/China/Ip Man 3.jpg" alt="">
+                                    <h5 id="H3">Ip Man 3 (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/China/Ip Man 4 The Finale.jpg" alt="">
+                                    <h5 id="H3">Ip Man 4 The Finale (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/China/Karate Kid.jpg" alt="">
+                                    <h5 id="H3">Karate Kid (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/China/Kungfu Hustle.jpg" alt="">
+                                    <h5 id="H3">Kungfu Hustle (2021)</h5>
+                                </div>
+                            </div>
+                            <!-- <div class="spacer-movie"></div>
+                            <div class="movie item">
+                                <div class="items">
+                                    <img src="../ASSETS/China/Master Z Ip Man Legacy.jpg" alt="">
+                                    <h5 id="H3">Master Z Ip Man Legacy (2021)</h5>
+                                </div>
+                                <div class="items"> 
+                                    <img src="../ASSETS/China/New Police Story.jpg" alt="">
+                                    <h5 id="H3">New Police Story (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/China/The Monkey King.jpg" alt="">
+                                    <h5 id="H3">The Monkey King (2021)</h5>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="spacer-movie"></div>
+                    </div>
+                    <div class="movie-genre">
+                        <div class="country">
+                            <div>
+                                Thailand
+                            </div>
+                            <div>
+                                <a href="../HTML/thailand.html" id="see-all">see all >></a>
+                            </div>
+                        </div>
+                        <div class="spacer-movie"></div>
+                        <div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Suckseed.jpg" alt="">
+                                    <h5 id="H3">Suckseed (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/App War.jpg" alt="">
+                                    <h5 id="H3">App War (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Bad Genius.jpg" alt="">
+                                    <h5 id="H3">Bad Genius (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Bike Man 2.jpg" alt="">
+                                    <h5 id="H3">Bike Man 2 (2021)</h5>
+                                </div>
+                            </div>
+                            <div class="spacer-movie"></div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Bike Man.jpg" alt="">
+                                    <h5 id="H3">Bike Man (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Brother of The Year.jpg" alt="">
+                                    <h5 id="H3">Brother of The Year (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Friend Zone.jpg" alt="">
+                                    <h5 id="H3">Friend Zone (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Ghost Lab.jpg" alt="">
+                                    <h5 id="H3">Ghost Lab (2021)</h5>
+                                </div>
+                            </div>
+                            <!-- <div class="spacer-movie"></div>
+                            <div class="movie-item">
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Pee Nak 2.jpg" alt="">
+                                    <h5 id="H3">Pee Nak 2 (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/Pee Nak.jpg" alt="">
+                                    <h5 id="H3">Pee Nak (2021)</h5>
+                                </div>
+                                <div class="items">
+                                    <img src="../ASSETS/Thailand/A little thing called love.jpg" alt="">   
+                                    <h5 id="H3">A little thing called love (2021)</h5>                                    
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="spacer-movie"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+        </div>
+        <div class="footer">
+            <p style="text-align: center; font-size: 18px;"> Copyright © 2021 LeTflix Indonesia. All Right Reserved</p>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>

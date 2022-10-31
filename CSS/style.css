@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.spacer {
+    height: 100px;
+}
+
+
+/* Homepage */
+
+.logo {
+    padding: 5px;
+}
+
+.background {
+    background-image: url(../ASSETS/Backgroud.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 3s background-image;
+    width: 100%;
+}
+
+.background:hover {
+    background-image: url(../ASSETS/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 3s background-image;
+    width: 100%;
+}
+
+.nav-bar {
+    background-color: black;
+}
+
+.navmenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+svg {
+    display: none;
+}
+
+.link,
+.dropdown-item {
+    font-size: 15px;
+    margin-top: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.link:hover,
+.dropdown-item:hover {
+    text-decoration: underline white 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.slideshow-item {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0, 6s ease;
+    user-select: none;
+    display: inline-block;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: gray;
+}
+
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: gray;
+}
+
+.slide {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.main {
+    border-top: 8px solid #222;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+#H1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#H2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.main-item {
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    border-top: 8px solid #222;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+
+/* Drama */
+
+.movie {
+    background-color: rgb(19, 17, 17);
+}
+
+.movie-main {
+    width: 80%;
+    margin: auto;
+    border-radius: 2em;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.movie-genre {
+    display: flex;
+    flex-direction: column;
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.movie-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spacer-movie {
+    height: 50px;
+}
+
+#H3 {
+    color: black;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.country {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#see-all {
+    color: white;
+    font-size: medium;
+    font-weight: 300;
+    text-decoration: none;
+    border: solid 2px black;
+    background-color: darkgreen;
+    padding: 5px;
+    border-radius: 2em;
+}
+
+
+/* Plan */
+
+.background-plan {
+    background-color: rgb(19, 17, 17);
+}
+
+.header {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.subscription-kotak {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.subscription-kotak1 {
+    border: groove 1em silver;
+    border-radius: 2em;
+    background-color: white;
+}
+
+.subscription-kotak2 {
+    border: groove 1em gold;
+    border-radius: 2em;
+    background-color: white;
+}
+
+.subscription-kotak3 {
+    border: groove 1em royalblue;
+    border-radius: 2em;
+    background-color: white;
+}
+
+.header-font {
+    text-align: center;
+}
+
+.body-plan {
+    padding: 20px;
+}
+
+#H5 {
+    margin-top: 10px;
+}
+
+.body-main {
+    display: flex;
+    flex-direction: row;
+    width: 40% 60%;
+}
+
+.subscription-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    padding: 10px;
+    border: solid white;
+    border-radius: 50px;
+    background-color: green;
+    transition-duration: 1s;
+}
+
+.button:hover {
+    padding: 10px;
+    border: solid white;
+    border-radius: 50px;
+    background-color: cyan;
+    transition-duration: 1s;
+}
+
+.button-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.plan {
+    background-color: rgb(19, 17, 17);
+}
+
+.plan-features {
+    width: 70%;
+    margin: auto;
+    border-radius: 2em;
+    background-color: white;
+    background-size: contain;
+    font-family: sans-serif;
+    color: black;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.plan-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.features {
+    margin: auto;
+    align-items: center;
+}
+
+.features-item {
+    text-align: center;
+    line-height: 30px;
+}
+
+
+/* about */
+
+.page-about {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.company {
+    font-size: large;
+}
+
+.box {
+    background-color: black;
+    width: 325px;
+    border: 10px solid red;
+    padding: 50px;
+    border-radius: 2em;
+    margin: 20px;
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.third-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.judul {
+    color: red;
+    font-weight: bold;
+}
+
+.CEO {
+    font-size: 25px;
+}
+
+.isi {
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+/* Subscription */
+
+.background-subcription {
+    background-color: rgb(19, 17, 17);
+}
+
+.form {
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.form-plan {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.form-button {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .slideshow-item {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    svg {
+        display: flex;
+    }
+    .logo {
+        margin: auto;
+    }
+    .nav-bar .navmenu {
+        flex-direction: column;
+        display: none;
+    }
+    .dropdown .dropdown-menu {
+        position: relative;
+        justify-content: center;
+    }
+    .link:hover,
+    .dropdown-item:hover {
+        text-decoration: none;
+    }
+    .dropdown-menu.responsive {
+        display: flex;
+        flex-direction: row;
+    }
+    .slideshow-item {
+        max-width: 600px;
+        position: relative;
+        margin: auto;
+    }
+    .prev,
+    .next {
+        font-size: 11px
+    }
+    .nav-bar .nav-toogle {
+        display: block;
+        padding: 20px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #H1 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    #H2 {
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .subscription-kotak {
+        margin-top: 5px;
+        margin: auto;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .movie-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .movie-genre {
+        text-align: center;
+    }
+    .items {
+        margin: auto;
+    }
+    .second-row,
+    .third-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer {
+        border-top: 8px solid #222;
+        background-color: black;
+        color: white;
+        font-size: 10px;
+        font-weight: 700;
+        padding: 20px;
+    }
+    .movie-main {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        margin: auto;
+    }
+    .nav-bar .navmenu {
+        flex-direction: column;
+        display: none;
+    }
+    .link:hover,
+    .dropdown-item:hover {
+        text-decoration: none;
+    }
+    .dropdown-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .dropdown .dropdown-menu {
+        position: relative;
+    }
+    .slideshow-item {
+        max-width: 400px;
+        position: relative;
+        margin: auto;
+    }
+    .prev,
+    .next {
+        font-size: 11px
+    }
+    .nav-bar .nav-toogle {
+        display: block;
+        padding: 20px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #H1 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+    #H2 {
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .footer {
+        border-top: 8px solid #222;
+        background-color: black;
+        color: white;
+        font-size: 7px;
+        font-weight: 500;
+        padding: 20px;
+    }
+}

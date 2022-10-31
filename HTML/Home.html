@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeTflix</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../ASSETS/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="background">
+            <div class="nav-bar">
+                <div class="nav-toogle" onclick="nav_toogle()">
+                    <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                      </svg>
+                </div>
+                <div class="navmenu" id="navmenu">
+                    <div class="logo">
+                        <img src="../ASSETS/Letflix.png" alt="Logo" width="165px">
+                    </div>
+                    <div class="item">
+                        <a href="../HTML/Home.html" class="link">HOME</a>
+                    </div>
+                    <div class="item dropdown">
+                        <a href="../HTML/Dramas.html" class="link">DRAMA'S</a>
+                        <div class="dropdown-menu">
+                            <a href="western.html" class="dropdown-item">Western</a>
+                            <a href="korean.html" class="dropdown-item">Korean</a>
+                            <a href="china.html" class="dropdown-item">China</a>
+                            <a href="thailand.html" class="dropdown-item">Thailand</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="../HTML/Plan.html" class="link">PLAN'S</a>
+                    </div>
+                    <div class="item">
+                        <a href="../HTML/About.html" class="link">ABOUT</a>
+                    </div>
+                    <div class="item">
+                        <a href="../HTML/Subcription.html" class="link">SUBSCRIPTION</a>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="slideshow" id="slider">
+                <div class="slideshow-item" id="slider-image">
+                    <div class="slide fade">
+                        <img src="../ASSETS/1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../ASSETS/2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../ASSETS/3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="slide fade">
+                        <img src="../ASSETS/4.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+        </div>
+        <div class="main">
+            <div class="main-item">
+                <h1 id="H1">Subcribe to get All Benefits</h1>
+                <h2 id="H2">Watch on your Smartphone, Smart TVs,<br> Chromecast, Laptop, Blu-ray players, and <br> more.
+                </h2>
+            </div>
+            <div class="main-item">
+                <video src="../ASSETS/Project HCI 1.mp4" autoplay loop width="100%"></video>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-item">
+                <img src="../ASSETS/down-arrow.png" alt="" width="50%">
+            </div>
+            <div class="main-item">
+                <h1 id="H1">Downloads.<br> to watch offline.</h1>
+                <h2 id="H2">If you subscribe to NeTflix, you can watch<br> your favorite movies offline.</h2>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-item">
+                <h1 id="H1">Full HD.</h1>
+                <h2 id="H2">Stream unlimited movies and TV shows in <br> Full HD Quality.</h2>
+            </div>
+            <div class="main-item">
+                <video src="../ASSETS/My Video 1.mp4" autoplay loop muted width="100%"></video>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-item">
+                <img src="../ASSETS/free ads.png" alt="" width="70%">
+            </div>
+            <div class="main-item">
+                <h1 id="H1">Free Ads.</h1>
+                <h2 id="H2">No retrictions, No limits, No catches </h2>
+            </div>
+        </div>
+        <div class="footer">
+            <p style="text-align: center; font-size: 18px;"> Copyright © 2021 LeTflix Indonesia. All Right Reserved</p>
+        </div>
+    </div>
+
+    <script src="../JS/script.js"></script>
+    <script src="../JS/slideshow.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</body>
+
+</html>
